@@ -47,23 +47,23 @@ export default function App() {
             </div>
             <div className="sm:grid sm:grid-cols-[1fr_2fr] sm:gap-3 ">
               <button className="border rounded-lg" type="button" onClick={OpenDialog}>
-                <img src="/src/assets/mo.png" alt="proj1" className="object-cover" />
+                <img src="src/assets/mo.png" alt="proj1" className="object-cover" />
               </button>
               <div className=" sm:mx-auto w-full h-full border rounded-lg overflow-hidden">
-                <img src="/src/assets/m.png" alt="proj1" className="w-full h-full" />
+                <img src="src/assets/m.png" alt="proj1" className="w-full h-full" />
               </div>
             </div>
             <Dialog open={open} onOpenChange={OpenDialog}>
               <DialogContent className="sm:max-w-3/5 sm:h-4/5 flex flex-col justy-center overflow-hidden">
                 <div className="grid grid-cols-3 grid-flow-row justify-center">
                   <div className="w-full h-3/5">
-                    <img src="/src/assets/1.png" alt="proj1" className="object-contain scale-90 hover:scale-100" />
+                    <img src="src/assets/1.png" alt="proj1" className="object-contain scale-90 hover:scale-100" />
                   </div>
                   <div className="w-full h-3/5">
-                    <img src="/src/assets/2.png" alt="proj1" className="object-contain scale-90  hover:scale-100" />
+                    <img src="src/assets/2.png" alt="proj1" className="object-contain scale-90  hover:scale-100" />
                   </div>
                   <div className="w-full h-3/5">
-                    <img src="/src/assets/3.png" alt="proj1" className="object-contain scale-90  hover:scale-100" />
+                    <img src="src/assets/3.png" alt="proj1" className="object-contain scale-90  hover:scale-100" />
                   </div>
                 </div>
               </DialogContent>
