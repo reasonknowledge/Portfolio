@@ -15,7 +15,7 @@ export default function App() {
         <div className="flex flex-col sm:gap-3 sm:grid sm:grid-cols-[1fr_2fr] border sm:flex-row sm:w-3/4 justy-center">
           <div className="flex justify-center items-center">
             <Avatar className="w-40 h-40">
-              <AvatarImage src="/assets/reason.png" className="object-cover" alt="User avatar" />
+              <AvatarImage src="/src/assets/reason.png" className="object-cover" alt="User avatar" />
               <AvatarFallback>JD</AvatarFallback>
             </Avatar>
           </div>
@@ -39,7 +39,7 @@ export default function App() {
           <div className="sm:w-3/4 sm:gap-3 sm sm:flex flex flex-col">
             <div className="sm:grid sm:grid-cols-[2fr_1fr] sm:gap-3">
               <div className=" sm:mx-auto w-full h-full border rounded-lg overflow-hidden">
-                <img src="//assets/shot.png" alt="proj1" className="w-full h-full" />
+                <img src="//src/assets/shot.png" alt="proj1" className="w-full h-full" />
               </div>
               <div className="relative">
                 <Technos />
@@ -47,23 +47,23 @@ export default function App() {
             </div>
             <div className="sm:grid sm:grid-cols-[1fr_2fr] sm:gap-3 ">
               <button className="border rounded-lg" type="button" onClick={OpenDialog}>
-                <img src="/assets/mo.png" alt="proj1" className="object-cover" />
+                <img src="/src/assets/mo.png" alt="proj1" className="object-cover" />
               </button>
               <div className=" sm:mx-auto w-full h-full border rounded-lg overflow-hidden">
-                <img src="/assets/m.png" alt="proj1" className="w-full h-full" />
+                <img src="/src/assets/m.png" alt="proj1" className="w-full h-full" />
               </div>
             </div>
             <Dialog open={open} onOpenChange={OpenDialog}>
               <DialogContent className="sm:max-w-3/5 sm:h-4/5 flex flex-col justy-center overflow-hidden">
                 <div className="grid grid-cols-3 grid-flow-row justify-center">
                   <div className="w-full h-3/5">
-                    <img src="/assets/1.png" alt="proj1" className="object-contain scale-90 hover:scale-100" />
+                    <img src="/src/assets/1.png" alt="proj1" className="object-contain scale-90 hover:scale-100" />
                   </div>
                   <div className="w-full h-3/5">
-                    <img src="/assets/2.png" alt="proj1" className="object-contain scale-90  hover:scale-100" />
+                    <img src="/src/assets/2.png" alt="proj1" className="object-contain scale-90  hover:scale-100" />
                   </div>
                   <div className="w-full h-3/5">
-                    <img src="/assets/3.png" alt="proj1" className="object-contain scale-90  hover:scale-100" />
+                    <img src="/src/assets/3.png" alt="proj1" className="object-contain scale-90  hover:scale-100" />
                   </div>
                 </div>
               </DialogContent>
@@ -81,7 +81,7 @@ export default function App() {
               href="https://online.fliphtml5.com/yksuz/Modbile/"
               className="w-1/4 bg-white hover:bg-white border rounded-0 sm:h-full"
             >
-              <img src=".//assets/ModernWeb.png" className="object-cover hover:scale-110" alt="bookdevmobile" />
+              <img src=".//src/assets/ModernWeb.png" className="object-cover hover:scale-110" alt="bookdevmobile" />
             </a>
 
             <a
@@ -91,7 +91,7 @@ export default function App() {
               href="https://fliphtml5.com/yksuz/Modbile/"
               className="w-1/4 bg-white hover:bg-white border rounded-0 sm:h-full"
             >
-              <img src=".//assets/book.png" className="object-contain border" alt="bookdevmobile" />
+              <img src=".//src/assets/book.png" className="object-contain border" alt="bookdevmobile" />
             </a>
 
             <a
@@ -101,7 +101,7 @@ export default function App() {
               href="https://online.fliphtml5.com/yksuz/Modbile/"
               className="w-1/4 bg-white hover:bg-white border rounded-0 sm:h-full"
             >
-              <img src=".//assets/frontendcover.png" className="object-cover hover:scale-110 sm:h-full" alt="bookdevmobile" />
+              <img src=".//src/assets/frontendcover.png" className="object-cover hover:scale-110 sm:h-full" alt="bookdevmobile" />
             </a>
           </div>
         </div>
