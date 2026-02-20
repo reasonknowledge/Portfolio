@@ -39,7 +39,7 @@ export default function App() {
           <div className="sm:w-3/4 sm:gap-3 sm sm:flex flex flex-col">
             <div className="sm:grid sm:grid-cols-[2fr_1fr] sm:gap-3">
               <div className=" sm:mx-auto w-full h-full border rounded-lg overflow-hidden">
-                <img src="//src/assets/shot.png" alt="proj1" className="w-full h-full" />
+                <img src="/src/assets/shot.png" alt="proj1" className="w-full h-full" />
               </div>
               <div className="relative">
                 <Technos />
@@ -81,7 +81,7 @@ export default function App() {
               href="https://online.fliphtml5.com/yksuz/Modbile/"
               className="w-1/4 bg-white hover:bg-white border rounded-0 sm:h-full"
             >
-              <img src=".//src/assets/ModernWeb.png" className="object-cover hover:scale-110" alt="bookdevmobile" />
+              <img src="/src/assets/ModernWeb.png" className="object-cover hover:scale-110" alt="bookdevmobile" />
             </a>
 
             <a
@@ -91,7 +91,7 @@ export default function App() {
               href="https://fliphtml5.com/yksuz/Modbile/"
               className="w-1/4 bg-white hover:bg-white border rounded-0 sm:h-full"
             >
-              <img src=".//src/assets/book.png" className="object-contain border" alt="bookdevmobile" />
+              <img src="/src/assets/book.png" className="object-contain border" alt="bookdevmobile" />
             </a>
 
             <a
@@ -101,7 +101,7 @@ export default function App() {
               href="https://online.fliphtml5.com/yksuz/Modbile/"
               className="w-1/4 bg-white hover:bg-white border rounded-0 sm:h-full"
             >
-              <img src=".//src/assets/frontendcover.png" className="object-cover hover:scale-110 sm:h-full" alt="bookdevmobile" />
+              <img src="/src/assets/frontendcover.png" className="object-cover hover:scale-110 sm:h-full" alt="bookdevmobile" />
             </a>
           </div>
         </div>
