@@ -67,7 +67,7 @@ export default function Footer() {
             <FaTwitter />
           </a>
           <a
-            href="mailto:franckngoubounkou@gamil.com"
+            href="mailto:franckngoubounkou@gmail.com"
             className="text-neutral-400 hover:text-cyan-400 transition-colors duration-300 text-2xl hover:-translate-y-1"
             aria-label="Email"
           >
@@ -75,7 +75,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="text-center space-y-3">
-          <p className="text-neutral-400 text-sm md:text-base">© {currentYear} Franck — Tous droits réservés</p>
+          <p className="text-neutral-400 text-sm md:text-base">&copy; {currentYear} Franck — Tous droits réservés</p>
           <p className="text-neutral-500 text-sm italic">Crafted with passion, coffee & a bit of chaos</p>
         </div>
       </div>
