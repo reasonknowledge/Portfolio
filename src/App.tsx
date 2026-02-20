@@ -23,9 +23,9 @@ export default function App() {
   const OpenDialog = () => setIsopen(!open)
 
   return (
-    <div className="sm:flex sm:flex-col sm:m-4">
+    <div className="min-h-max mx-auto flex flex-col m-0 sm:m-4">
       <div className="flex flex-col items-center gap-3 justify-center">
-        <div className="flex flex-col sm:gap-3 sm:grid sm:grid-cols-[1fr_2fr] border sm:flex-row sm:w-3/4 justify-center">
+        <div className="flex flex-col sm:gap-3 sm:grid sm:grid-cols-[1fr_2fr] border sm:flex-row sm:w-3/4 sm:justify-center">
           <div className="flex justify-center items-center">
             <Avatar className="w-40 h-40">
               <AvatarImage src={reasonImg} className="object-cover" alt="User avatar" />
@@ -51,16 +51,16 @@ export default function App() {
 
         <div className="flex flex-col gap-10 items-center w-full justify-center">
           <div className="sm:w-3/4 sm:gap-3 sm:flex flex flex-col">
-            <div className="sm:grid sm:grid-cols-[2fr_1fr] sm:gap-3">
+            <div className="flex flex-col sm:grid sm:grid-cols-[2fr_1fr] gap-3">
               <div className="sm:mx-auto w-full h-full border rounded-lg overflow-hidden">
                 <img src={shotImg} alt="proj1" className="w-full h-full object-cover" />
               </div>
-              <div className="relative">
+              <div className="relative w-full h-80 sm:h-full">
                 <Technos />
               </div>
             </div>
 
-            <div className="sm:grid sm:grid-cols-[1fr_2fr] sm:gap-3">
+            <div className="flex flex-col gap-3 sm:grid sm:grid-cols-[1fr_2fr] sm:gap-3">
               <button className="border rounded-lg" type="button" onClick={OpenDialog}>
                 <img src={moImg} alt="proj1" className="object-contain w-full h-full" />
               </button>
@@ -70,8 +70,8 @@ export default function App() {
             </div>
 
             <Dialog open={open} onOpenChange={OpenDialog}>
-              <DialogContent className="sm:max-w-3/5 sm:h-4/5 flex flex-col justify-center overflow-hidden">
-                <div className="grid grid-cols-3 gap-4 justify-center">
+              <DialogContent className="sm:max-w-3/5 h-4/5 flex flex-col justify-center overflow-y-scroll sm:overflow-hidden">
+                <div className="flex flex-col sm:grid sm:grid-cols-3 sm:gap-4 sm:justify-center">
                   <div className="w-full h-full">
                     <img src={img1} alt="proj1" className="object-contain scale-90 hover:scale-100 transition-transform" />
                   </div>
