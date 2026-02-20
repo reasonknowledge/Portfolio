@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 import Footer from '@/components/custom/footer'
 import Technos from './components/custom/Technos'
@@ -6,16 +8,29 @@ import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from './components/ui/button'
 
+// ─── Imports des images ────────────────────────────────────────────────
+import reasonImg from '@/assets/reason.png'
+import shotImg from '@/assets/shot.png'
+import moImg from '@/assets/mo.png'
+import mImg from '@/assets/m.png'
+import img1 from '@/assets/1.png'
+import img2 from '@/assets/2.png'
+import img3 from '@/assets/3.png'
+import modernWebImg from '@/assets/ModernWeb.png'
+import bookImg from '@/assets/book.png'
+import frontendImg from '@/assets/frontendcover.png'
+
 export default function App() {
   const [open, setIsopen] = React.useState<boolean>(false)
   const OpenDialog = () => setIsopen(!open)
+
   return (
     <div className="sm:flex sm:flex-col sm:m-4">
-      <div className=" flex flex-col items-center gap-3 justify-center">
-        <div className="flex flex-col sm:gap-3 sm:grid sm:grid-cols-[1fr_2fr] border sm:flex-row sm:w-3/4 justy-center">
+      <div className="flex flex-col items-center gap-3 justify-center">
+        <div className="flex flex-col sm:gap-3 sm:grid sm:grid-cols-[1fr_2fr] border sm:flex-row sm:w-3/4 justify-center">
           <div className="flex justify-center items-center">
             <Avatar className="w-40 h-40">
-              <AvatarImage src="/src/assets/reason.png" className="object-cover" alt="User avatar" />
+              <AvatarImage src={reasonImg} className="object-cover" alt="User avatar" />
               <AvatarFallback>JD</AvatarFallback>
             </Avatar>
           </div>
@@ -35,53 +50,58 @@ export default function App() {
             </BoxReveal>
           </div>
         </div>
+
         <div className="flex flex-col gap-10 items-center w-full justify-center">
-          <div className="sm:w-3/4 sm:gap-3 sm sm:flex flex flex-col">
+          <div className="sm:w-3/4 sm:gap-3 sm:flex flex flex-col">
             <div className="sm:grid sm:grid-cols-[2fr_1fr] sm:gap-3">
-              <div className=" sm:mx-auto w-full h-full border rounded-lg overflow-hidden">
-                <img src="/src/assets/shot.png" alt="proj1" className="w-full h-full" />
+              <div className="sm:mx-auto w-full h-full border rounded-lg overflow-hidden">
+                <img src={shotImg} alt="proj1" className="w-full h-full object-cover" />
               </div>
               <div className="relative">
                 <Technos />
               </div>
             </div>
-            <div className="sm:grid sm:grid-cols-[1fr_2fr] sm:gap-3 ">
+
+            <div className="sm:grid sm:grid-cols-[1fr_2fr] sm:gap-3">
               <button className="border rounded-lg" type="button" onClick={OpenDialog}>
-                <img src="/src/assets/mo.png" alt="proj1" className="object-cover" />
+                <img src={moImg} alt="proj1" className="object-cover w-full h-full" />
               </button>
-              <div className=" sm:mx-auto w-full h-full border rounded-lg overflow-hidden">
-                <img src="/src/assets/m.png" alt="proj1" className="w-full h-full" />
+              <div className="sm:mx-auto w-full h-full border rounded-lg overflow-hidden">
+                <img src={mImg} alt="proj1" className="w-full h-full object-cover" />
               </div>
             </div>
+
             <Dialog open={open} onOpenChange={OpenDialog}>
-              <DialogContent className="sm:max-w-3/5 sm:h-4/5 flex flex-col justy-center overflow-hidden">
-                <div className="grid grid-cols-3 grid-flow-row justify-center">
-                  <div className="w-full h-3/5">
-                    <img src="/src/assets/1.png" alt="proj1" className="object-contain scale-90 hover:scale-100" />
+              <DialogContent className="sm:max-w-[80%] sm:h-[80%] flex flex-col justify-center overflow-hidden">
+                <div className="grid grid-cols-3 gap-4 justify-center">
+                  <div className="w-full h-full">
+                    <img src={img1} alt="proj1" className="object-contain scale-90 hover:scale-100 transition-transform" />
                   </div>
-                  <div className="w-full h-3/5">
-                    <img src="/src/assets/2.png" alt="proj1" className="object-contain scale-90  hover:scale-100" />
+                  <div className="w-full h-full">
+                    <img src={img2} alt="proj1" className="object-contain scale-90 hover:scale-100 transition-transform" />
                   </div>
-                  <div className="w-full h-3/5">
-                    <img src="/src/assets/3.png" alt="proj1" className="object-contain scale-90  hover:scale-100" />
+                  <div className="w-full h-full">
+                    <img src={img3} alt="proj1" className="object-contain scale-90 hover:scale-100 transition-transform" />
                   </div>
                 </div>
               </DialogContent>
             </Dialog>
           </div>
+
           <div>
             <p className="text-sm text-center">Auteurs des ouvrages</p>
-            <p className="text-xs">Cliquez sur chacun pour voir voir les aperçus</p>
+            <p className="text-xs text-center">Cliquez sur chacun pour voir les aperçus</p>
           </div>
-          <div className=" sm:flex sm:justify-center sm:w-full sm:gap-3 lg:p-3">
+
+          <div className="sm:flex sm:justify-center sm:w-full sm:gap-6 lg:p-3">
             <a
-              title="Utimate roadmap for the modern web development"
+              title="Ultimate roadmap for the modern web development"
               target="_blank"
               rel="noopener noreferrer"
               href="https://online.fliphtml5.com/yksuz/Modbile/"
-              className="w-1/4 bg-white hover:bg-white border rounded-0 sm:h-full"
+              className="w-1/4 bg-white hover:bg-white border rounded-lg overflow-hidden sm:h-full"
             >
-              <img src="/src/assets/ModernWeb.png" className="object-cover hover:scale-110" alt="bookdevmobile" />
+              <img src={modernWebImg} className="object-cover hover:scale-110 transition-transform" alt="book modern web" />
             </a>
 
             <a
@@ -89,9 +109,9 @@ export default function App() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://fliphtml5.com/yksuz/Modbile/"
-              className="w-1/4 bg-white hover:bg-white border rounded-0 sm:h-full"
+              className="w-1/4 bg-white hover:bg-white border rounded-lg overflow-hidden sm:h-full"
             >
-              <img src="/src/assets/book.png" className="object-contain border" alt="bookdevmobile" />
+              <img src={bookImg} className="object-contain border hover:scale-110 transition-transform" alt="book dev mobile" />
             </a>
 
             <a
@@ -99,13 +119,14 @@ export default function App() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://online.fliphtml5.com/yksuz/Modbile/"
-              className="w-1/4 bg-white hover:bg-white border rounded-0 sm:h-full"
+              className="w-1/4 bg-white hover:bg-white border rounded-lg overflow-hidden sm:h-full"
             >
-              <img src="/src/assets/frontendcover.png" className="object-cover hover:scale-110 sm:h-full" alt="bookdevmobile" />
+              <img src={frontendImg} className="object-cover hover:scale-110 transition-transform sm:h-full" alt="book frontend" />
             </a>
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   )
