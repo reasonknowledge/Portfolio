@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import Footer from '@/components/custom/footer'
 import Technos from './components/custom/Technos'
@@ -8,7 +6,6 @@ import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from './components/ui/button'
 
-// ─── Imports des images ────────────────────────────────────────────────
 import reasonImg from '@/assets/reason.png'
 import shotImg from '@/assets/shot.png'
 import moImg from '@/assets/mo.png'
@@ -16,7 +13,8 @@ import mImg from '@/assets/m.png'
 import img1 from '@/assets/1.png'
 import img2 from '@/assets/2.png'
 import img3 from '@/assets/3.png'
-import modernWebImg from '@/assets/ModernWeb.png'
+import main from '@/assets/main.png'
+
 import bookImg from '@/assets/book.png'
 import frontendImg from '@/assets/frontendcover.png'
 
@@ -64,7 +62,7 @@ export default function App() {
 
             <div className="sm:grid sm:grid-cols-[1fr_2fr] sm:gap-3">
               <button className="border rounded-lg" type="button" onClick={OpenDialog}>
-                <img src={moImg} alt="proj1" className="object-cover w-full h-full" />
+                <img src={moImg} alt="proj1" className="object-contain w-full h-full" />
               </button>
               <div className="sm:mx-auto w-full h-full border rounded-lg overflow-hidden">
                 <img src={mImg} alt="proj1" className="w-full h-full object-cover" />
@@ -72,7 +70,7 @@ export default function App() {
             </div>
 
             <Dialog open={open} onOpenChange={OpenDialog}>
-              <DialogContent className="sm:max-w-[80%] sm:h-[80%] flex flex-col justify-center overflow-hidden">
+              <DialogContent className="sm:max-w-3/5 sm:h-4/5 flex flex-col justify-center overflow-hidden">
                 <div className="grid grid-cols-3 gap-4 justify-center">
                   <div className="w-full h-full">
                     <img src={img1} alt="proj1" className="object-contain scale-90 hover:scale-100 transition-transform" />
@@ -101,7 +99,7 @@ export default function App() {
               href="https://online.fliphtml5.com/yksuz/Modbile/"
               className="w-1/4 bg-white hover:bg-white border rounded-lg overflow-hidden sm:h-full"
             >
-              <img src={modernWebImg} className="object-cover hover:scale-110 transition-transform" alt="book modern web" />
+              <img src={main} className="object-cover hover:scale-110 transition-transform" alt="book modern web" />
             </a>
 
             <a
