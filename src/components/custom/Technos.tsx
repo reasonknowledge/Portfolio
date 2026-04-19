@@ -2,7 +2,7 @@ import { OrbitingCircles } from '@/components/ui/orbiting-circles'
 
 export default function Technos() {
   return (
-    <div className="justify-center flex items-center gap-5 relative h-full rounded-xl w-96 overflow-hidden border">
+    <div className="justify-center flex items-center gap-5 relative h-full rounded-xl w-96 overflow-hidden border dark:bg-card">
       <OrbitingCircles radius={150}>
         <svg viewBox="0 0 128 128">
           <path
@@ -205,7 +205,7 @@ export default function Technos() {
           ></path>
         </svg>
       </OrbitingCircles>
-      <p className='text-sm  text-gray-500 absolute bottom-3'>Mes Technos</p>
+      <p className="text-sm text-muted-foreground absolute bottom-3">Mes Technos</p>
     </div>
   )
 }
