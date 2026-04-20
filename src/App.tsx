@@ -126,7 +126,7 @@ export default function App() {
               title="devmobile"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://fliphtml5.com/yksuz/Modbile/"
+              href="https://online.fliphtml5.com/yksuz/Modbile-tqHP/"
               className="w-1/4 bg-white hover:bg-white dark:bg-card border border-border rounded-lg overflow-hidden sm:h-full"
             >
               <img src={bookImg} className="object-contain border border-border hover:scale-110 transition-transform" alt="book dev mobile" />
@@ -136,7 +136,7 @@ export default function App() {
               title="fundamental frontend development"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://online.fliphtml5.com/yksuz/Modbile/"
+              href="https://online.fliphtml5.com/yksuz/Frontend_all-K9he/"
               className="w-1/4 bg-white hover:bg-white dark:bg-card border border-border rounded-lg overflow-hidden sm:h-full"
             >
               <img src={frontendImg} className="object-cover hover:scale-110 transition-transform sm:h-full" alt="book frontend" />
