@@ -323,7 +323,7 @@ const PremiumCarousel: FC<PremiumCarouselProps> = ({ slides = [], autoplay = tru
             marginTop: 4,
           }}
         >
-          Montors Projets
+          Projets
         </h1>
       </div>
 

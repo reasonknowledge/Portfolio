@@ -6,7 +6,7 @@ import { BoxReveal } from '@/components/ui/box-reveal'
 import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from './components/ui/button'
-import ProjectsPage from './stores/pages/projects'
+import ProjectsPage from './pages/projects'
 
 import reasonImg from '@/assets/reason.png'
 import shotImg from '@/assets/shot.png'
@@ -32,14 +32,14 @@ export default function App() {
   return (
     <div className="min-h-screen mx-auto flex flex-col px-4 sm:px-6 lg:px-8">
       <div className="flex sm:w-full flex-col items-center gap-3 justify-center">
-        <div className="flex  flex-col p-2 sm:gap-3 sm:grid sm:grid-cols-[1fr_2fr] dark:bg-card border border-border sm:flex-row sm:w-3/4 sm:justify-center mt-2">
+        <div className="flex flex-col p-2 sm:gap-3 sm:grid sm:grid-cols-[1fr_2fr] dark:bg-card border border-border sm:w-3/4 sm:justify-center mt-2 w-full">
           <div className="flex justify-center items-center ">
             <Avatar className="w-40 h-40">
               <AvatarImage src={reasonImg} className="object-cover" alt="User avatar" />
               <AvatarFallback>JD</AvatarFallback>
             </Avatar>
           </div>
-          <div className="p-6">
+          <div className="p-2">
             <BoxReveal boxColor="#93c5fd">
               <h1 className="text-4xl md:text-4xl font-extrabold font-tangerine">De l'idée → Réalité</h1>
             </BoxReveal>
@@ -49,7 +49,7 @@ export default function App() {
               <p className="mt-2 text-base opacity-90">Transformez vos idées en Applications réelles</p>
               <p className="mt-1 text-sm italic opacity-70">Franck Hervé - Obsédé par la qualité des résultats</p>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-1">
                 <div className="mt-4">
                   <Button className="cursor-pointer">Discutons</Button>
                 </div>
@@ -71,7 +71,7 @@ export default function App() {
 
         <div className="flex flex-col gap-10 items-center w-full justify-center">
           <div className="sm:w-3/4 sm:gap-3 sm:flex flex flex-col">
-            <div className="flex flex-col sm:grid sm:grid-cols-[2fr_1fr] gap-3">
+            <div className="flex flex-col sm:grid sm:grid-cols-[2fr_1fr] gap-3 mb-6">
               <div className="sm:mx-auto w-full h-full border border-border rounded-lg overflow-hidden dark:bg-card">
                 <img src={shotImg} alt="proj1" className="w-full h-full object-cover" />
               </div>
@@ -144,7 +144,6 @@ export default function App() {
           </div>
         </div>
       </div>
-
       <Footer />
     </div>
   )
