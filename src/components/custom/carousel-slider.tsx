@@ -333,7 +333,7 @@ const PremiumCarousel: FC<PremiumCarouselProps> = ({ slides = [], autoplay = tru
         style={{
           position: 'relative',
           width: '100%',
-          height: 360,
+          height: 'clamp(280px, 60vw, 400px)',
           perspective: 1400,
           perspectiveOrigin: '50% 50%',
           zIndex: 10,
@@ -381,10 +381,10 @@ const PremiumCarousel: FC<PremiumCarouselProps> = ({ slides = [], autoplay = tru
                   position: 'absolute',
                   top: '50%',
                   left: '50%',
-                  width: 600,
-                  height: 380,
-                  marginLeft: -300,
-                  marginTop: -200,
+                  width: 'clamp(280px, 85vw, 600px)',
+                  height: 'clamp(200px, 55vw, 380px)',
+                  marginLeft: 'calc(clamp(280px, 85vw, 600px) * -0.5)',
+                  marginTop: 'calc(clamp(200px, 55vw, 380px) * -0.5)',
                   borderRadius: 20,
                   overflow: 'hidden',
                   ...coverflowStyle,
@@ -418,7 +418,7 @@ const PremiumCarousel: FC<PremiumCarouselProps> = ({ slides = [], autoplay = tru
                       bottom: 0,
                       left: 0,
                       right: 0,
-                      padding: 28,
+                      padding: 'clamp(12px, 4vw, 28px)',
                     }}
                   >
                     {slide.year && (
@@ -427,7 +427,7 @@ const PremiumCarousel: FC<PremiumCarouselProps> = ({ slides = [], autoplay = tru
                         style={{
                           fontFamily: "'Montserrat', sans-serif",
                           fontWeight: 300,
-                          fontSize: 11,
+                          fontSize: 'clamp(9px, 2.5vw, 11px)',
                           letterSpacing: 4,
                           textTransform: 'uppercase',
                           color: slide.accent ?? DEFAULT_ACCENT,
@@ -441,12 +441,15 @@ const PremiumCarousel: FC<PremiumCarouselProps> = ({ slides = [], autoplay = tru
                     <h2
                       className="pc-in"
                       style={{
-                        fontSize: 28,
+                        fontSize: 'clamp(14px, 4vw, 24px)',
                         fontWeight: 700,
                         color: '#fff',
-                        lineHeight: 1.1,
+                        lineHeight: 1.3,
                         marginBottom: 4,
                         animationDelay: '0.12s',
+                        wordWrap: 'break-word',
+                        overflowWrap: 'break-word',
+                        hyphens: 'auto',
                       }}
                     >
                       {slide.title}
@@ -457,10 +460,12 @@ const PremiumCarousel: FC<PremiumCarouselProps> = ({ slides = [], autoplay = tru
                         style={{
                           fontFamily: "'Montserrat', sans-serif",
                           fontWeight: 300,
-                          fontSize: 13,
-                          color: 'rgba(255,255,255,0.65)',
+                          fontSize: 'clamp(10px, 2.5vw, 12px)',
+                          color: 'rgba(255,255,255,0.85)',
                           letterSpacing: 0.5,
                           animationDelay: '0.2s',
+                          wordWrap: 'break-word',
+                          overflowWrap: 'break-word',
                         }}
                       >
                         {slide.subtitle}
