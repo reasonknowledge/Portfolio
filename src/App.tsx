@@ -71,7 +71,7 @@ export default function App() {
 
         <div className="flex flex-col gap-10 items-center w-full justify-center">
           <div className="sm:w-3/4 sm:gap-3 sm:flex flex flex-col">
-            <div className="flex flex-col sm:grid sm:grid-cols-[2fr_1fr] gap-3 mb-6">
+            <div className="flex flex-col sm:grid sm:grid-cols-[2fr_1fr] gap-3">
               <div className="sm:mx-auto w-full h-full border border-border rounded-lg overflow-hidden dark:bg-card">
                 <img src={shotImg} alt="proj1" className="w-full h-full object-cover" />
               </div>
@@ -116,7 +116,7 @@ export default function App() {
               title="Ultimate roadmap for the modern web development"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://online.fliphtml5.com/yksuz/Modbile/"
+              href="https://online.fliphtml5.com/yksuz/DeveloppementCorrection-y5oa/"
               className="w-1/4 bg-white hover:bg-white dark:bg-card border border-border rounded-lg overflow-hidden sm:h-full"
             >
               <img src={main} className="object-cover hover:scale-110 transition-transform" alt="book modern web" />
